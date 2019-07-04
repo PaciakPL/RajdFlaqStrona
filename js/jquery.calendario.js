@@ -72,10 +72,10 @@
 	},
 
 	_processCaldataObj: function(val, key){
-	  if(typeof val !== 'object') val = {content: val, startTime: '00:00', endTime: '23:59', allDay: true};
+	  if(typeof val !== 'object') val = {content: val, startTime: '17:00', endTime: '23:59', allDay: false};
 	  if(!val.content) this.logError('Content is missing in date ' + key);
 	  if(val.startTime && !val.endTime) val.endTime = parseInt(val.startTime.split(':')[0]) + 1 + ':' + val.startTime.split(':')[1];
-	  if(!val.startTime && !val.endTime) val = $.extend({}, val, {startTime: '00:00', endTime: '23:59', allDay: true});
+	  if(!val.startTime && !val.endTime) val = $.extend({}, val, {startTime: '17:00', endTime: '23:59', allDay: false});
 	  if(val.startTime && val.endTime && val.allDay === undefined) val.allDay = false;
 	  if(/^\d{2}-DD-\d{4}/.test(key) || /^\d{2}-DD-YYYY/.test(key)) {
 		var det = /^(\d{2})-DD-(\d{4})/.exec(key) || /^(\d{2})-DD-YYYY/.exec(key), chkDate;
