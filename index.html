@@ -400,8 +400,11 @@
 
 	<script>
 		jQuery(document).ready( function($){
-			var newDate = new Date(2019, 8, 13);
-			$('#countdown-ex1').countdown({until: newDate});
+			var countdownDate = Date.parse("2019-09-13 17:00:00");
+			
+			$('#countdown-ex1').countdown({
+				until: new Date(countdownDate)
+			});
 		});
 	</script>
 
