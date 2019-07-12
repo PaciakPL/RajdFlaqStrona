@@ -10561,7 +10561,7 @@ blockquote.float-right {
 }
 
 .owl-carousel .owl-item img {
-  object-fit: cover;
+  /* object-fit: cover; */
 	display:block;
 	width:100%;
 	-webkit-transform-style:preserve-3d;
