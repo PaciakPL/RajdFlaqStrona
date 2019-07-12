@@ -8,6 +8,7 @@
 	<!-- Stylesheets
 	============================================= -->
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Raleway:300,400,500,600,700|Crete+Round:400i" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
 	<link rel="stylesheet" href="style.css" type="text/css" />
 	<link rel="stylesheet" href="css/dark.css" type="text/css" />
@@ -60,7 +61,7 @@
 							<li class="current"><a href="#baza" data-scrollto="#baza"><div>Baza</div></a></li>
 							<li class="current"><a href="#galeria" data-scrollto="#galeria"><div>Galeria</div></a></li>
 							<li class="current"><a href="#regulamin" data-scrollto="#regulamin"><div>Regulamin</div></a></li>
-							<li class="current"><a href="#regulamin" data-scrollto="#roadbook"><div>Roadbook</div></a></li>
+							<li class="current"><a href="#roadbook" data-scrollto="#roadbook"><div>Roadbook</div></a></li>
 							<li class="current"><a href="#zgloszenia" data-scrollto="#zgloszenia"><div>Zgłoszenia</div></a></li>
 							<li class="current"><a href="https://paciak.pl"><div>PACIAK.PL</div></a></li>
 						</ul>
@@ -159,13 +160,11 @@
 					<div>
 						Rajd prowadzić będzie w całości po drogach asfaltowych. Trasa przejazdu wiedzie przez najatrakcyjniejsze miejsca regionu z dala od głównych dróg. Motocykle startujące w rajdzie muszą posiadać ważny przegląd techniczny i ubezpieczenie OC oraz być zarejestrowane.
 						<!-- @TODO: Przerobić na karuzelę obrazków -->
-						<div id="road-gallery" class="owl-carousel owl-carousel-full image-carousel bottommargin-sm carousel-widget" data-margin="30" data-loop="true" data-nav="false" data-autoplay="5000" data-pagi="false" data-items-xs="2" data-items-sm="3" data-items-md="4" data-items-lg="5" data-items-xl="6" data-autoWidth="true">
-              
-							<!-- @TODO: Fix horizontal scaling -->
-							<div class="oc-item"><a href="images/road/1.jpg"><img src="images/road/1.jpg" ></a></div>
-							<div class="oc-item"><a href="images/road/2.jpg"><img src="images/road/2.jpg" ></a></div>
-							<div class="oc-item"><a href="images/road/3.jpg"><img src="images/road/3.jpg" ></a></div>
-							<div class="oc-item"><a href="images/road/4.jpg"><img src="images/road/4.jpg" ></a></div>
+						<div id="road-gallery" class="owl-carousel owl-carousel-full image-carousel bottommargin-sm carousel-widget" data-margin="30" data-loop="false" data-nav="false" data-autoplay="5000" data-pagi="false" data-items-xs="2" data-items-sm="3" data-items-md="4" data-items-lg="5" data-items-xl="6" data-autoWidth="true">
+							<div class="oc-item"><a href="images/road/orig/1.jpg" data-fancybox="road"><img src="images/road/1.jpg" ></a></div>
+							<div class="oc-item"><a href="images/road/orig/2.jpg" data-fancybox="road"><img src="images/road/2.jpg" ></a></div>
+							<div class="oc-item"><a href="images/road/orig/3.jpg" data-fancybox="road"><img src="images/road/3.jpg" ></a></div>
+							<div class="oc-item"><a href="images/road/orig/4.jpg" data-fancybox="road"><img src="images/road/4.jpg" ></a></div>
 						</div>
 					</div>
 					<div class="clear"></div>
@@ -178,21 +177,21 @@
 					<div>
 						<p>Nasza baza noclegowa: <a href="http://stalowy-zdroj.pl">Ośrodek Wczasowo-Rehabilitacyjny Stalowy Zdrój</a> usytuowany na obrzeżach miasta Duszniki Zdrój, 7 km od Zieleńca. Jego wyjątkowa lokalizacja w otoczeniu lasu iglastego tworzy znakomity alpejski mikroklimat. Oferuje uczestnikom komfortowe pokoje 2-, 3- i 4-osobowe z łazienkami. Wieczorna wspólna biesiada przy ognisku, smaczne jadło i napitek czekać będą na uczestników po dniu pełnym sportowych wrażeń. Najbliższa miejscowość z sklepem i stacją paliw jest oddalona o około 5 km.</p>
 						<p>
-							<div id="hotel-gallery" class="owl-carousel owl-carousel-full image-carousel bottommargin-sm carousel-widget" data-margin="30" data-loop="true" data-nav="false" data-autoplay="5000" data-pagi="false" data-items-xs="2" data-items-sm="3" data-items-md="4" data-items-lg="5" data-items-xl="6" data-autoWidth="true">
-								<div class="oc-item"><a href="images/hotel/orig/1.jpg"><img src="images/hotel/1.jpg" ></a></div>
-								<div class="oc-item"><a href="images/hotel/orig/2.jpg"><img src="images/hotel/2.jpg" ></a></div>
-								<div class="oc-item"><a href="images/hotel/orig/3.jpg"><img src="images/hotel/3.jpg" ></a></div>
-								<div class="oc-item"><a href="images/hotel/orig/4.jpg"><img src="images/hotel/4.jpg" ></a></div>
-								<div class="oc-item"><a href="images/hotel/orig/5.jpg"><img src="images/hotel/5.jpg" ></a></div>
-								<div class="oc-item"><a href="images/hotel/orig/6.jpg"><img src="images/hotel/6.jpg" ></a></div>
-								<div class="oc-item"><a href="images/hotel/orig/7.jpg"><img src="images/hotel/7.jpg" ></a></div>
-								<div class="oc-item"><a href="images/hotel/orig/8.jpg"><img src="images/hotel/8.jpg" ></a></div>
-								<div class="oc-item"><a href="images/hotel/orig/9.jpg"><img src="images/hotel/9.jpg" ></a></div>
-								<div class="oc-item"><a href="images/hotel/orig/10.jpg"><img src="images/hotel/10.jpg" ></a></div>
-								<div class="oc-item"><a href="images/hotel/orig/11.jpg"><img src="images/hotel/11.jpg" ></a></div>
-								<div class="oc-item"><a href="images/hotel/orig/12.jpg"><img src="images/hotel/12.jpg" ></a></div>
-								<div class="oc-item"><a href="images/hotel/orig/13.jpg"><img src="images/hotel/13.jpg" ></a></div>
-								<div class="oc-item"><a href="images/hotel/orig/14.jpg"><img src="images/hotel/14.jpg" ></a></div>
+							<div id="hotel-gallery" class="owl-carousel owl-carousel-full image-carousel bottommargin-sm carousel-widget" data-margin="30" data-loop="false" data-nav="false" data-autoplay="5000" data-pagi="false" data-items-xs="2" data-items-sm="3" data-items-md="4" data-items-lg="5" data-items-xl="6" data-autoWidth="true">
+								<div class="oc-item"><a href="images/hotel/orig/1.jpg"   data-fancybox="hotel"><img src="images/hotel/1.jpg" ></a></div>
+								<div class="oc-item"><a href="images/hotel/orig/2.jpg"   data-fancybox="hotel"><img src="images/hotel/2.jpg" ></a></div>
+								<div class="oc-item"><a href="images/hotel/orig/3.jpg"   data-fancybox="hotel"><img src="images/hotel/3.jpg" ></a></div>
+								<div class="oc-item"><a href="images/hotel/orig/4.jpg"   data-fancybox="hotel"><img src="images/hotel/4.jpg" ></a></div>
+								<div class="oc-item"><a href="images/hotel/orig/5.jpg"   data-fancybox="hotel"><img src="images/hotel/5.jpg" ></a></div>
+								<div class="oc-item"><a href="images/hotel/orig/6.jpg"   data-fancybox="hotel"><img src="images/hotel/6.jpg" ></a></div>
+								<div class="oc-item"><a href="images/hotel/orig/7.jpg"   data-fancybox="hotel"><img src="images/hotel/7.jpg" ></a></div>
+								<div class="oc-item"><a href="images/hotel/orig/8.jpg"   data-fancybox="hotel"><img src="images/hotel/8.jpg" ></a></div>
+								<div class="oc-item"><a href="images/hotel/orig/9.jpg"   data-fancybox="hotel"><img src="images/hotel/9.jpg" ></a></div>
+								<div class="oc-item"><a href="images/hotel/orig/10.jpg"  data-fancybox="hotel"><img src="images/hotel/10.jpg" ></a></div>
+								<div class="oc-item"><a href="images/hotel/orig/11.jpg"  data-fancybox="hotel"><img src="images/hotel/11.jpg" ></a></div>
+								<div class="oc-item"><a href="images/hotel/orig/12.jpg"  data-fancybox="hotel"><img src="images/hotel/12.jpg" ></a></div>
+								<div class="oc-item"><a href="images/hotel/orig/13.jpg"  data-fancybox="hotel"><img src="images/hotel/13.jpg" ></a></div>
+								<div class="oc-item"><a href="images/hotel/orig/14.jpg"  data-fancybox="hotel"><img src="images/hotel/14.jpg" ></a></div>
 							</div>
 						</p>
 						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10177.113072423483!2d16.392687!3d50.380011!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc2b8c89ff05fea51!2sO%C5%9Brodek+Wczasowo-Rehabilitacyjny+Stalowy+Zdr%C3%B3j!5e0!3m2!1spl!2spl!4v1562258818886!5m2!1spl!2spl" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -206,12 +205,11 @@
 					</div>
 					<div>
 						<!-- @TODO: Przerobić na karuzelę obrazków -->
-						<div id="gallery" class="owl-carousel owl-carousel-full image-carousel bottommargin-sm carousel-widget" data-margin="30" data-loop="true" data-nav="false" data-autoplay="5000" data-pagi="false" data-items-xs="2" data-items-sm="3" data-items-md="4" data-items-lg="5" data-items-xl="6">
-								<!-- @TODO: Fix horizontal scaling -->
-								<div class="oc-item"><a href="images/gallery/1.jpg"><img src="images/gallery/1.jpg"></a></div>
-								<div class="oc-item"><a href="images/gallery/2.jpg"><img src="images/gallery/2.jpg"></a></div>
-								<div class="oc-item"><a href="images/gallery/3.jpg"><img src="images/gallery/3.jpg"></a></div>
-								<div class="oc-item"><a href="images/gallery/4.jpg"><img src="images/gallery/4.jpg"></a></div>
+						<div id="gallery" class="owl-carousel owl-carousel-full image-carousel bottommargin-sm carousel-widget" data-margin="30" data-loop="false" data-nav="false" data-autoplay="5000" data-pagi="false" data-items-xs="2" data-items-sm="3" data-items-md="4" data-items-lg="5" data-items-xl="6">
+								<div class="oc-item"><a href="images/gallery/orig/1.jpg" data-fancybox="gallery" ><img src="images/gallery/1.jpg"></a></div>
+								<div class="oc-item"><a href="images/gallery/orig/2.jpg" data-fancybox="gallery" ><img src="images/gallery/2.jpg"></a></div>
+								<div class="oc-item"><a href="images/gallery/orig/3.jpg" data-fancybox="gallery" ><img src="images/gallery/3.jpg"></a></div>
+								<div class="oc-item"><a href="images/gallery/orig/4.jpg" data-fancybox="gallery" ><img src="images/gallery/4.jpg"></a></div>
 						</div>
 					</div>
 					<div class="clear"></div>
@@ -443,12 +441,14 @@
 	<script src="js/jquery.js"></script>
 	<script src="js/plugins.js"></script>
 	<script src="js/events-data.js"></script>
+	
+
 
 	<!-- Footer Scripts
 	============================================= -->
 	<script src="js/functions.js"></script>
 	<script type="text/javascript" src="js/plugins/jquery.countdown-pl.js"></script>
-
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script>
 		jQuery(document).ready( function($){
 			var countdownDate = Date.parse("2019-09-13 17:00:00");
