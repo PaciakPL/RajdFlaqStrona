@@ -10523,6 +10523,8 @@ blockquote.float-right {
 }
 
 .owl-carousel .owl-stage {
+	display: flex;
+	align-items: center;
 	position:relative;
 	-ms-touch-action: pan-Y;
 }
