@@ -376,7 +376,7 @@
                     Dokonanie potwierdzonej rejestracji za pomocą stosownego formularza internetowego zamieszczonego na oficjalnej stornie rajdu.
                   </li>
                   <li>
-                    Dokonanie wpłaty wpisowego.
+                    Dokonanie wpłaty wpisowego w terminie 14 dni od potwierdzenia rejestracji przez organizatora.
                   </li>
                   <li>
                     Akceptacja niniejszego regulaminu.
@@ -693,6 +693,7 @@
           <div class="container clearfix" id="zgloszenia">
             <div class="heading-block center">
               <h2>Zgłoszenia</h2>
+              <span>Na Twoje zgłoszenie czekamy do 5 sierpnia!</span>
             </div>
             <div>
               <h2>Dostępne pakiety</h2>
@@ -753,6 +754,8 @@
                 </div>
               </div>
               <p style="text-align: center">
+                Zapisy zamykamy za <br>
+                <div id="countdown-endOfRegistration" class="countdown countdown-small coming-soon divcenter bottommargin" style="max-width:100%;"></div>
                 <a data-fancybox data-options='{"iframe" : {"css" : {"width" : "95%", "height" : "95%"}}}' data-type="iframe"
                   href="https://docs.google.com/forms/d/e/1FAIpQLSetwT3ZSE1x_0SbNzmH9VYveUz4J7YTXyckYdFEhXtY2EnCvw/viewform?embedded=true"
                   class="btn btn-primary">
@@ -848,10 +851,14 @@
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script>
       jQuery(document).ready(function($) {
-          var countdownDate = Date.parse("2019-09-13 17:00:00");
+          var beginOfRally = Date.parse("2019-09-13T17:00:00+02:00");
+          var endOfRegistration = Date.parse("2019-08-04T23:59:59+02:00");
 
           $('#countdown-ex1').countdown({
-              until: new Date(countdownDate)
+              until: new Date(beginOfRally)
+          });
+          $('#countdown-endOfRegistration').countdown({
+              until: new Date(endOfRegistration)
           });
       });
     </script>
